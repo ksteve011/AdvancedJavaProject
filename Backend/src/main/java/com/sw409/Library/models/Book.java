@@ -1,12 +1,10 @@
 package com.sw409.Library.models;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+
 
 @Entity
 public class Book {
@@ -16,11 +14,14 @@ public class Book {
 	Integer id;
 	String title;
 	String authorName;
+	String booktype;
 	
-	@OneToMany(mappedBy = "book")
-	
-	private List <Book> books;
-	
+	public String getBooktype() {
+		return booktype;
+	}
+	public void setBooktype(String booktype) {
+		this.booktype = booktype;
+	}
 	public Integer getId() {
 		return id;
 	}
