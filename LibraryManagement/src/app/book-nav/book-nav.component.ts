@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from '../../service/BookService';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-book-nav',
@@ -10,6 +11,7 @@ export class BookNavComponent implements OnInit {
 
   constructor(private bookService: BookService) { }
 
+  userId;
   books: [];
 
   selectedBooks = {
@@ -17,9 +19,10 @@ export class BookNavComponent implements OnInit {
   };
 
   ngOnInit(): void {
-  this.bookService.findAllBooks()
-     .then(books => this.books = books);
-  }
+      this.activatedRoute
+        .params
+        .subscribe (params => this.userId = params['userId'])
+    }
 /*
   selectBook(book = never) {
   this.selectedBooks = book;

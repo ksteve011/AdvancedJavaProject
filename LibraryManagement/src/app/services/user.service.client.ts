@@ -4,9 +4,9 @@ import {Injectable} from '@angular/core';
 export class UserService{
 
 users = [
-  {_id: 123,  username: 'kim', password: 'kimpassword'},
-  {_id: 124,  username: 'tom', password: 'tompassword'},
-  {_id: 125, username: 'amy', password: 'amy'}
+  {_id: 123,  username: 'kim', password: 'kimpassword', name: 'KIM'},
+  {_id: 124,  username: 'tom', password: 'tompassword', name: 'TOM'},
+  {_id: 125, username: 'amy', password: 'amypassword', name: 'AMY'}
 ];
 
 findUserByCredentials(username: String, password: String){
