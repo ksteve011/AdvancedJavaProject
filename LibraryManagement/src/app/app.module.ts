@@ -30,7 +30,10 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [BookService],
+  providers: [
+  UserService,
+  BookService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
