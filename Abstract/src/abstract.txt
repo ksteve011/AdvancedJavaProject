@@ -1,0 +1,6 @@
+Group Members: Khalela Stevens, Logan Pensa, Nadav Zarmi
+
+Our group plans to make an application that will be a miniature library
+    management system, and one geared towards students. It will allows users to input the
+    type of book and what class it is for. Essentially, it will allows students to keep track
+    of all the books they may need for the semester.
