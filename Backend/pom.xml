@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.Library</groupId>
-	<artifactId>Library</artifactId>
+	<artifactId>Book</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Library</name>
-	<description>Library Service</description>
+	<name>Book</name>
+	<description>Book</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -27,13 +27,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-	<dependency>
+		
+		
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.17</version>
+			<version>8.0.22</version><!--$NO-MVN-MAN-VER$-->
 			<scope>runtime</scope>
 		</dependency>
+		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
